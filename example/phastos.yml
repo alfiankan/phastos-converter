@@ -1,0 +1,12 @@
+version: "1.0.0"
+
+tasks:
+  - name: 'my video .mov to .mp4'
+    tenant: 'shared'
+    processor: 
+      name: 'ffmepg-mov-mp4'
+      configs:
+        - scaling: '50%'
+    exporter:
+      name: 'temp'
+  
